@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<test groupId="perfrepouser" name="ExpressID AFIS 4 Performance Test"
+	id="4" uid="eafis-test">
+	<description>This is a sample ExpressID AFIS Performance test for
+		demonstration purposes
+	</description>
+	<metrics>
+		<metric comparator="HB" name="Throughput" id="5">
+			<description>Speed of message throughput in the system in
+				operations/second
+			</description>
+		</metric>
+		<metric comparator="HB" name="AverageRequestDuration" id="6">
+			<description>Average request duration in milliseconds</description>
+		</metric>
+	</metrics>
+</test>

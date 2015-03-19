@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testExecution name="Execution 1 master" started="2015-03-05T13:45:38.811+01:00"
+	id="349" testId="4" testUid="eafis-test">
+	<attachments />
+	<comment>This is an execution</comment>
+	<parameters>
+		<parameter name="afismq.slap_compression_level" value="0.9" />
+		<parameter name="database" value="mssql" />
+		<parameter name="version" value="4.0.0-alpha3-SNAPSHOT" />
+		<parameter name="OS" value="Windows" />
+	</parameters>
+	<tags>
+		<tag name="extraction" />
+		<tag name="Windows" />
+		<tag name="mssql" />
+		<tag name="master" />
+	</tags>
+	<values>
+		<value metricComparator="HB" metricName="Throughput" result="24.23414348354064">
+			<parameters />
+		</value>
+		<value metricComparator="HB" metricName="AverageRequestDuration"
+			result="9.174482404623362">
+			<parameters />
+		</value>
+	</values>
+</testExecution>

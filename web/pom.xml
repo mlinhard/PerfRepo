@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.perfrepo</groupId>
@@ -182,7 +183,8 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<archive>
 						<manifestEntries>
-							<Dependencies>org.jboss.resteasy.resteasy-jaxb-provider export services</Dependencies>
+							<Dependencies>org.jboss.resteasy.resteasy-jaxb-provider export
+								services</Dependencies>
 						</manifestEntries>
 					</archive>
 					<webResources>
@@ -220,8 +222,10 @@
 
 	<profiles>
 		<profile>
-			<!-- The default profile skips all tests, though you can tune it to run just unit tests based on a custom pattern -->
-			<!-- Seperate profiles are provided for running all tests, including Arquillian tests that execute in the specified container -->
+			<!-- The default profile skips all tests, though you can tune it to run 
+				just unit tests based on a custom pattern -->
+			<!-- Seperate profiles are provided for running all tests, including Arquillian 
+				tests that execute in the specified container -->
 			<id>default</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
@@ -240,9 +244,12 @@
 		</profile>
 
 		<profile>
-			<!-- When built in OpenShift the 'openshift' profile will be used when invoking mvn. -->
-			<!-- Use this profile for any OpenShift specific customization your app will need. -->
-			<!-- By default that is to put the resulting archive into the 'deployments' folder. -->
+			<!-- When built in OpenShift the 'openshift' profile will be used when 
+				invoking mvn. -->
+			<!-- Use this profile for any OpenShift specific customization your app 
+				will need. -->
+			<!-- By default that is to put the resulting archive into the 'deployments' 
+				folder. -->
 			<!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
 			<id>openshift</id>
 			<build>
@@ -260,4 +267,15 @@
 		</profile>
 
 	</profiles>
+
+	<repositories>
+		<repository>
+			<id>JBoss Releases</id>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<url>https://repository.jboss.org/nexus/content/repositories/releases</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
 </project>
