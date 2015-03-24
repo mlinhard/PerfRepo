@@ -48,12 +48,11 @@ import org.perfrepo.web.util.ReportUtils;
 import org.perfrepo.web.util.TagUtils;
 import org.perfrepo.web.util.ViewUtils;
 import org.perfrepo.web.viewscope.ViewScoped;
-import org.richfaces.ui.output.chart.ChartDataModel.ChartType;
-import org.richfaces.ui.output.chart.NumberChartDataModel;
-import org.richfaces.ui.output.chart.PlotClickEvent;
+import org.richfaces.model.ChartDataModel.ChartType;
+import org.richfaces.model.NumberChartDataModel;
+import org.richfaces.model.PlotClickEvent;
 
 import javax.annotation.PostConstruct;
-import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 

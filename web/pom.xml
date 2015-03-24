@@ -105,8 +105,8 @@
 			<version>${commons.codec.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.richfaces.compat</groupId>
-			<artifactId>richfaces-components-rich</artifactId>
+			<groupId>org.richfaces</groupId>
+			<artifactId>richfaces</artifactId>
 			<version>${richfaces.version}</version>
 		</dependency>
 		<dependency>

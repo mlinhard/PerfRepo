@@ -32,9 +32,9 @@ import org.perfrepo.web.util.MultiValue;
 import org.perfrepo.web.util.MultiValue.ParamInfo;
 import org.perfrepo.web.util.MultiValue.ValueInfo;
 import org.perfrepo.web.viewscope.ViewScoped;
-import org.richfaces.ui.output.chart.ChartDataModel;
-import org.richfaces.ui.output.chart.ChartDataModel.ChartType;
-import org.richfaces.ui.output.chart.NumberChartDataModel;
+import org.richfaces.model.ChartDataModel;
+import org.richfaces.model.ChartDataModel.ChartType;
+import org.richfaces.model.NumberChartDataModel;
 
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;

@@ -31,10 +31,10 @@ import javax.inject.Named;
 @ViewScoped
 public class HomeController extends BaseController {
 
-	/**
-	 * called on preRenderView
-	 */
-	public void preRender() throws Exception {
-		reloadSessionMessages();
-	}
+   /**
+    * called on preRenderView
+    */
+   public void preRender() throws Exception {
+      reloadSessionMessages();
+   }
 }

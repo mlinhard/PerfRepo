@@ -44,10 +44,10 @@ import org.perfrepo.web.util.MultiValue.ParamInfo;
 import org.perfrepo.web.util.MultiValue.ValueInfo;
 import org.perfrepo.web.viewscope.ViewScoped;
 import org.richfaces.event.FileUploadEvent;
+import org.richfaces.model.ChartDataModel;
+import org.richfaces.model.ChartDataModel.ChartType;
+import org.richfaces.model.NumberChartDataModel;
 import org.richfaces.model.UploadedFile;
-import org.richfaces.ui.output.chart.ChartDataModel;
-import org.richfaces.ui.output.chart.ChartDataModel.ChartType;
-import org.richfaces.ui.output.chart.NumberChartDataModel;
 
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
