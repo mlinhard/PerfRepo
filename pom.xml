@@ -109,6 +109,13 @@
 	</dependencyManagement>
 
 	<build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>2.2</version>
+            </extension>
+        </extensions>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
