@@ -35,6 +35,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriInfo;
 
 import java.lang.reflect.Method;
@@ -73,14 +74,18 @@ public class TestREST {
 		return Response.ok(testService.getFullTest(testId)).build();
 	}
 
-	@GET
-	@Produces(MediaType.TEXT_XML)
-	@Path("/uid/{testUid}")
-	@Logged
-	public Response getByUid(@PathParam("testUid") String testUid) {
-		Test test = testService.getTestByUID(testUid);
-		return Response.ok(testService.getFullTest(test.getId())).build();
-	}
+   @GET
+   @Produces(MediaType.TEXT_XML)
+   @Path("/uid/{testUid}")
+   @Logged
+   public Response getByUid(@PathParam("testUid") String testUid) {
+      Test test = testService.getTestByUID(testUid);
+      if (test != null) {
+         return Response.ok(testService.getFullTest(test.getId())).build();
+      } else {
+         return Response.status(Status.NOT_FOUND).build();
+      }
+   }
 
 	@POST
 	@Path("/create")
