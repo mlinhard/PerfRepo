@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.perfrepo</groupId>
 	<artifactId>perfrepo-parent</artifactId>
-	<version>1.5-SNAPSHOT</version>
+	<version>custom_innovatrics_5</version>
 	<packaging>pom</packaging>
 	<name>Performance Results Repository - Parent</name>
 	<description>Performance Results Repository Application</description>
@@ -73,6 +73,16 @@
 			<url>http://community.jboss.org/people/jholusa</url>
 		</developer>
 	</developers>
+    <distributionManagement>
+        <repository>
+            <id>innovatrics-releases</id>
+            <url>scp://nexus.innovatrics.inn/srv/nexus/sonatype-work/nexus/storage/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>innovatrics-snapshots</id>
+            <url>scp://nexus.innovatrics.inn/srv/nexus/sonatype-work/nexus/storage/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -111,6 +121,13 @@
 		</dependencies>
 	</dependencyManagement>
 	<build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>2.2</version>
+            </extension>
+        </extensions>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
