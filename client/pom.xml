@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>org.perfrepo</groupId>
 		<artifactId>perfrepo-parent</artifactId>
-		<version>custom_innovatrics_5</version>
+		<version>custom_innovatrics_6</version>
 	</parent>
 	<artifactId>perfrepo-client</artifactId>
 	<name>Performance Results Repository Client</name>
